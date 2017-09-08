@@ -15,7 +15,7 @@ Containing:
 
 
 ### Description
-This is a contacts applications. There is only few functionality. It can list your contacts. You can search for contacts by using the searchbox.
+This is a contacts applications. There are only few functionalities. It can list your contacts, you can search for contacts by using the searchbox.
 
 ### Setup
 
@@ -25,36 +25,47 @@ cp ./src/Config/config.example.json ./src/Config/config.json
 ```
 
 Install the dependencies
-```js
-yarn run dev
+```bash
+yarn install
 ```
 
 Running the development environment
-```js
+```bash
 yarn run dev
 ```
 
 Building the app for production
-```js
+```bash
 yarn run build
 ```
 
 Running the production server
-```js
+```bash
 yarn run prod
+```
+
+Open in the browser
+```bash
+open http://localhost:3000
 ```
 
 ### API Setup
 
 Create your contacts file.
-```js
+```bash
 yarn run seed
 ```
 
 Run the api
-```js
+```bash
 yarn run api
 ```
+
+Open in the browser
+```bash
+open http://localhost:4000/graphql
+```
+
 
 
 ### Optional
