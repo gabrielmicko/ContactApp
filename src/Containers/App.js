@@ -24,8 +24,7 @@ App.propTypes = {
 };
 
 const mapDispatchToProps = (dispatch, state) => ({
-  boot: () => {
-  },
+  boot: () => {},
 });
 
 export default connect(state => {

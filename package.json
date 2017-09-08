@@ -17,9 +17,11 @@
   "dependencies": {
     "apollo-client": "1.9.0",
     "babel-preset-node5": "^12.0.1",
+    "cors": "^2.8.4",
     "express": "^4.15.4",
     "express-graphql": "^0.6.11",
     "faker": "^4.1.0",
+    "fs": "^0.0.1-security",
     "graphql-tools": "^1.2.2",
     "history": "^4.6.1",
     "json-loader": "^0.5.4",

@@ -1,6 +1,3 @@
-/*
-This is not currently used, may need additional dependency
-
 import React from 'react';
 import PropTypes from 'prop-types';
 
@@ -16,18 +13,10 @@ class Notification extends React.Component {
     if (this.props.message.length) {
       if (typeof this.props.message !== 'string') {
         messages = this.props.message.map((key, message) => {
-          return (
-            <p key={message}>
-              {key}
-            </p>
-          );
+          return <p key={message}>{key}</p>;
         });
       } else {
-        messages = (
-          <p>
-            {this.props.message}
-          </p>
-        );
+        messages = <p>{this.props.message}</p>;
       }
     }
 
@@ -60,6 +49,3 @@ Notification.propTypes = {
 };
 
 export default Notification;
-
-
- */

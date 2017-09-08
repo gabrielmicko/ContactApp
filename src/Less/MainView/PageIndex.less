@@ -45,5 +45,51 @@
     }
   }
   .contact-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .shared.notification {
+      width: 100%;
+      margin: 10px 0;
+    }
+    .contact:hover {
+      background-color: #f1f1f1;
+    }
+    .contact {
+      cursor: pointer;
+      padding: 10px;
+      box-sizing: border-box;
+      display: flex;
+      flex-basis: 50%;
+      margin-top: 20px;
+      align-items: center;
+
+      @media screen and (max-width: 768px) {
+        flex-basis: 100%;
+      }
+      .profile-pic img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin: 0 10px;
+      }
+      font-size: 15px;
+      .name {
+        margin: 0 10px 7px;
+      }
+      .tel,
+      .about {
+        margin: 0 10px 3px;
+        font-size: 14px;
+        color: #cbcad2;
+      }
+
+      .call-btn {
+        flex-grow: 1;
+        text-align: right;
+        font-size: 32px;
+        color: #31aaff;
+      }
+    }
   }
 }

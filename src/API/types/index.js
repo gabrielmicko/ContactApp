@@ -1,12 +1,10 @@
-import Speaker from './speaker';
-import Talk from './talk';
+import Person from './person';
 /**
  * Query type which holds the queryies which could be called.
  */
 const Query = /* GraphQL */ `
   type Query {
-    speakers(id: String, name: String): [Speaker!]
-    talks: [Talk!]
+    contacts(query: String): [Person!]
   }
 `;
 
@@ -19,4 +17,4 @@ const Schema = /* GraphQL */ `
   }
 `;
 
-export default [Schema, Query, Speaker, Talk];
+export default [Schema, Query, Person];

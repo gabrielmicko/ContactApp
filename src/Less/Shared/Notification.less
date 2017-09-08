@@ -1,0 +1,31 @@
+.shared.notification {
+  margin: 0 0 10px;
+  padding: 10px 30px;
+  color: #fff;
+  position: relative;
+
+  &.success {
+    background-color: #349719;
+  }
+
+  &.error {
+    background-color: #f51f1f;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  p + p {
+    margin: 10px 0 0;
+  }
+
+  .remove {
+    position: absolute;
+    padding: 10px;
+    right: 20px;
+    top: 2px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+}

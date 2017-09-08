@@ -1,7 +1,7 @@
 import Express from 'express';
 import GraphHTTP from 'express-graphql';
 import Schema from './schema';
-
+import cors from 'cors';
 console.log('🔍 - Initiating files for GraphQL.');
 const APP_PORT = 4000;
 const APP_PATH = 'graphql';
@@ -12,10 +12,11 @@ const app = Express();
  */
 app.use(
   '/' + APP_PATH,
+  cors(),
   GraphHTTP({
     schema: Schema,
     pretty: true,
-    graphiql: true
+    graphiql: true,
   })
 );
 

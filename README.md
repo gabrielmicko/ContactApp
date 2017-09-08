@@ -1,4 +1,4 @@
-### React starter
+### Contacts app showcase
 Containing:
 
 * webpack v2
@@ -10,9 +10,14 @@ Containing:
 * dev server
 * production config and server
 * react-router v4
+* apollo-client
+* graphql
 
 
-### Usage
+### Description
+This is a contacts applications. There is only few functionality. It can list your contacts. You can search for contacts by using the searchbox.
+
+### Setup
 
 Create a config file
 ```bash
@@ -38,6 +43,21 @@ Running the production server
 ```js
 yarn run prod
 ```
+
+### API Setup
+
+Create your contacts file.
+```js
+yarn run seed
+```
+
+Run the api
+```js
+yarn run api
+```
+
+
+### Optional
 
 Prettify LESS and JS
 ```js

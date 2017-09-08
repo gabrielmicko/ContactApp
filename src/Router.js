@@ -9,9 +9,6 @@ export default class Router extends React.Component {
       <App>
         <Switch>
           <Route exact path="/" component={MainView} />
-          {/*<NoSessionRouter path="/account" component={AccountView} />*/}
-         {/* <Route path="/404" component={AccountView} />
-          <Redirect from="*" to="/404" />*/}
         </Switch>
       </App>
     );
